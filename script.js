@@ -9,13 +9,6 @@ let imgDivs = document.querySelectorAll('.col')
 let div_arr = Array.from(ansDivs)
 let img_divs = Array.from(imgDivs)
 
-// for (let i=0; i < imgDivs.length; i++){
-//     imgDivs[i].setAttribute("style", `background: url(images/img${i}.jpg) no-repeat center`);
-// }  
-
-
-// let answer = document.querySelector('.answer').innerText
-
 //Adds new numbers to the questions
 function populate(){
     first.innerText = Math.floor(Math.random()*15)
@@ -97,9 +90,8 @@ function reveal(){
     shuf.pop(shuf[a])
 }
 
-
+//if correct guess the below happens
 function correctAction(chosenDiv, guess){
-    // console.log(isClicked)
     if (guess.classList.contains('answer')){
         guess.classList.add('correct');
         
@@ -121,75 +113,28 @@ function correctAction(chosenDiv, guess){
             chosenDiv = populate();
         }, 2000);
     } else {
-        // chosenDiv.classList.remove('correct');
         guess.classList.remove('clicked');
         alert('Try again!')
     }};
 
-
-    // div_arr.forEach(ads => {
-    //     console.log('correctaction')
-    //     if (ads.classList.contains('clicked') && ads.classList.contains('answer')){
-    //         chosenDiv.classList.add('correct');
-    //     } else {
-    //         ads.classList.remove('correct');
-    //         ads.classList.remove('clicked');
-    //     };
-    // })
-
-    // if (chosenDiv.classList.contains('answer')){
-    //     sleep(2000)
-    //     chosenDiv.classList.add('correct');
-    //     console.log('correct')
-    // } else {
-    //     chosenDiv.classList.remove('correct');
-    //     // chosenDiv.classList.remove('answer');
-    // };
-
 let chosenDiv = populate()
 
-
-// //Adds event listener for each answer
-// ans1.addEventListener('click', populate)
-// ans2.addEventListener('click', populate)
-// ans3.addEventListener('click', populate)
-
-// let isClicked = false
-// div_arr.forEach(ads => {
-    //     ads.addEventListener('click', ()=>{
-        //         populate()
-        //         isClicked = true
-        //     })
-        // });
-
 ans1.addEventListener("click", (ev) => {
-    // isClicked = true;
     ans1.classList.add('clicked')
     console.log('clicked1')
     correctAction(chosenDiv, ev.target)
-    // sleep(1000)
-    // reset()
-    // populate();
 });
 
 ans2.addEventListener("click", (ev) => {
-    // isClicked = true;
     ans2.classList.add('clicked')
     correctAction(chosenDiv, ev.target)
     console.log('clicked2')
-
-    // reset()
-    // populate();
 });
 
 ans3.addEventListener("click", (ev) => {
-    // isClicked = true;
     ans3.classList.add('clicked')
     console.log('clicked3')
-
     correctAction(chosenDiv, ev.target)
-    // reset()
-    // populate();
 });
 
 window.onload = populate();
