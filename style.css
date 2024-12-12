@@ -11,6 +11,10 @@ body {
     font-family: cursive;
 }
 
+footer {
+    color: white;
+}
+
 #muteHolder {
     margin: 0 auto;
     text-align: center;
@@ -100,10 +104,50 @@ h1 {
     justify-content: space-evenly;
     position: relative;
 }
+/* 
+.s1{
+    background: rgba(0, 0, 0, 0.7) url('images/actual/bath1.jpg') no-repeat center / 80%;
+} */
+
+.s1{
+    background: url('images/actual/bath1.jpg') no-repeat center / 80%;
+}
+
+.s2 {
+    background: url('images/actual/bath2.jpg') no-repeat center / 80%;
+}
+
+.s3 {
+    background: url('images/actual/bath3.jpg') no-repeat center / 80%;
+}
+
+#s4 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/fire1.jpg') no-repeat center / 80%;
+}
+
+#s5 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/fire2.jpg') no-repeat center / 80%;
+}
+
+#s6 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/fire3.jpg') no-repeat center / 80%;
+}
+
+#s7 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe1.jpg') no-repeat center / 80%;
+}
+
+#s8 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe2.jpg') no-repeat center / 80%;
+}
+
+#s9 {
+    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe3.jpg') no-repeat center / 80%;
+}
 
 .col {
     /* border: 2px solid white; */
-    background-color: rgba(250, 235, 215, 0.1);
+    /* background-color: rgba(250, 235, 215, 0.1); */
     height: 200px;
     width: 33%;
     display: inline-block;
@@ -113,11 +157,12 @@ h1 {
     background-color: red;
     transform: scale(1.2, 1.2);
     /* background-image: url(images/elf.png); */
-    -webkit-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-    /* transition: 0.5s; */
+    -webkit-transition: background-color 0.7s ease-in-out;
+    transition: background-color 0.7s ease-in-out;
+    /* transition: 0.7s; */
 }
 
+/* not used */
 .overlay {
     position: absolute;
     top: 0;
@@ -127,8 +172,12 @@ h1 {
     color: black;
 }
 
+.hidden {
+    background-size: 0 0;
+}
+
 .reveal {
-    background: rgba(0, 0, 0, 0.5) url('images/img0.jpg') no-repeat center center;
+    /* background: rgba(0, 0, 0, 0.7) url('images/img0.jpg') no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

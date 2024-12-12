@@ -108,6 +108,7 @@ function reveal(){
             if (img_divs[i].classList.contains('reveal')){
                 continue
             } else {    
+                img_divs[i].classList.remove('hidden')
                 img_divs[i].classList.add('reveal');
                 break
             }
