@@ -117,7 +117,7 @@ function reveal(y){
             } 
             break
         }
-    if (y == 9){
+    if (y == 10){
         alert("Well done girls!! Now come and find us...")
     }
 }
