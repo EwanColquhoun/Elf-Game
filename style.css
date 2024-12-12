@@ -16,19 +16,30 @@ footer {
 }
 
 #muteHolder {
+    position: absolute;
+    left: 10%;
+    top: 10%;
     margin: 0 auto;
     text-align: center;
     padding: 5px;
+    z-index: 200;
+}
+
+#muteBut {
+    background-color: rgba(35, 150, 35, 0.2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: unset;
 }
 
 #title{
     height: 50px;
     text-align: center;
     margin: 1rem auto;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-around;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 h1 {
@@ -37,11 +48,11 @@ h1 {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 4px 4px 4px 4px;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 #sum-holder {
-    height: 100px;
+    height: 60px;
     width: 60%;
     border: 2px solid black;
     align-items: center;
