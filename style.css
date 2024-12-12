@@ -122,27 +122,27 @@ h1 {
 }
 
 .s4 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/fire1.jpg') no-repeat center / 80%;
+    background: url('images/actual/fire1.jpg') no-repeat center / 80%;
 }
 
 .s5 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/fire2.jpg') no-repeat center / 80%;
+    background: url('images/actual/fire2.jpg') no-repeat center / 80%;
 }
 
 .s6 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/fire3.jpg') no-repeat center / 80%;
+    background: url('images/actual/fire3.jpg') no-repeat center / 80%;
 }
 
 .s7 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe1.jpg') no-repeat center / 80%;
+    background: url('images/actual/shoe1.jpg') no-repeat center / 80%;
 }
 
 .s8 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe2.jpg') no-repeat center / 80%;
+    background: url('images/actual/shoe2.jpg') no-repeat center / 80%;
 }
 
 .s9 {
-    background: rgba(0, 0, 0, 0.7) url('images/actual/shoe3.jpg') no-repeat center / 80%;
+    background: url('images/actual/shoe3.jpg') no-repeat center / 80%;
 }
 
 .col {
