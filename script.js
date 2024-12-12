@@ -13,6 +13,7 @@ let cDiv = ''
 let unshuffled = [0,1,2,3,4,5,6,7,8]
 let answers = []
 let d = 0
+let y = 0
 
 //Works out the correct answer and returns it 
 function calculate(){
@@ -97,24 +98,28 @@ function shuffle(arry){
 }
 
 // Adds class to image divs to show the clue
-function reveal(){
+function reveal(y){
     let shuf = shuffle(unshuffled)
     let a = shuf[0]
+    console.log(y)
     while (x<=9){
         x++
         unshuffled = unshuffled.filter(function(item) {
             return item !== a})
-        for (let i=a; i <= img_divs.length;){
-            if (img_divs[i].classList.contains('reveal')){
-                continue
-            } else {    
-                img_divs[i].classList.remove('hidden')
-                img_divs[i].classList.add('reveal');
-                break
-            }
-        } 
-        break
-    } 
+            for (let i=a; i <= img_divs.length;){
+                if (img_divs[i].classList.contains('reveal')){
+                    continue
+                } else {    
+                    img_divs[i].classList.remove('hidden')
+                    img_divs[i].classList.add('reveal');
+                    break
+                }
+            } 
+            break
+        }
+    if (y == 9){
+        alert("Well done girls!! Now come and find us...")
+    }
 }
 
 //if correct guess the below happens
@@ -124,8 +129,9 @@ function correctAction(cDiv, guess){
         guess.classList.add('correct');
         let corr = new Audio('media/bells.mp3')
         corr.play()
+        y++
         // INSERT Correction actions regarding images here.
-        reveal();
+        reveal(y);
 
         setTimeout(() => {
             reset(),
