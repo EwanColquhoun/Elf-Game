@@ -112,14 +112,15 @@ function reveal(y){
                 } else {    
                     img_divs[i].classList.remove('hidden')
                     img_divs[i].classList.add('reveal');
+                    if (y == 9){
+                        setTimeout(()=> {
+                            alert("Well done girls!! Now come and find us...")},2000)
+                    }
                     break
                 }
             } 
             break
         }
-    if (y == 10){
-        alert("Well done girls!! Now come and find us...")
-    }
 }
 
 //if correct guess the below happens
